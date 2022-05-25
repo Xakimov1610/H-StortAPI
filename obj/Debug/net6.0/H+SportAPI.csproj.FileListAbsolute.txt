@@ -25,3 +25,7 @@
 /Users/xakimov/Dev/Linkedin/H+SportAPI/obj/Debug/net6.0/H+SportAPI.pdb
 /Users/xakimov/Dev/Linkedin/H+SportAPI/obj/Debug/net6.0/H+SportAPI.genruntimeconfig.cache
 /Users/xakimov/Dev/Linkedin/H+SportAPI/obj/Debug/net6.0/ref/H+SportAPI.dll
+/Users/xakimov/Dev/Linkedin/H+SportAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/xakimov/Dev/Linkedin/H+SportAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/xakimov/Dev/Linkedin/H+SportAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/xakimov/Dev/Linkedin/H+SportAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll

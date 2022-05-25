@@ -1,13 +1,24 @@
 namespace H_SportAPI.Models;
+
+using HP_SportAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ProductContoller : ControllerBase
+public class ProductController : ControllerBase
 {
-    [HttpGet, Route("HELLO")]
-    public string Get()
+    private readonly ShopContext _context;
+
+    public ProductController(ShopContext context)
     {
-        return "Hello World";
+        _context = context;
+
+        _context.Database.EnsureCreated();
+    }
+
+    [HttpGet]
+    public IEnumerable<Product> GetAllProducts()
+    {
+        return _context.Products.ToArray();
     }
 }
