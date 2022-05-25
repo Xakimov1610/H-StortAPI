@@ -1,8 +1,9 @@
-namespace H_SportAPI.Models;
+namespace HP_SportAPI.Models;
 
 public class Category
 {
     public int Id { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public virtual List<Product> Products { get; set; }
 }
+
