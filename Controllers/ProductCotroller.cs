@@ -21,4 +21,17 @@ public class ProductController : ControllerBase
     {
         return Ok(_context.Products.ToArray());
     }
+    
+    [HttpGet("{id}")]
+    public IActionResult GetProduct(int id)
+    {
+        var product = _context.Products.Find(id);
+
+        if (product == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(product);
+    }
 }
