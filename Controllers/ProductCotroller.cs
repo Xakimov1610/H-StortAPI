@@ -17,8 +17,8 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<Product> GetAllProducts()
+    public IActionResult GetAllProducts()
     {
-        return _context.Products.ToArray();
+        return Ok(_context.Products.ToArray());
     }
 }
